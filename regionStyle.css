@@ -1,0 +1,33 @@
+body {
+    background-image: url("images/edu2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ 
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#list{
+	background-image: url("images/board2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: #ffffff;
+	
+}
+
+#tableHeader{
+	color: #b8e8f2;
+}
+
+#headings{
+	color: #ffffff;
+}
+
+
+a:hover{
+	color: #c418db;
+}

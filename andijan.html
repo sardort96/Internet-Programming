@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="b.css">
+
+<link rel="stylesheet" href="css/bootstrap.css">
+ <script src="intern.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  
+</head><!--  -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+
+      <a class="navbar-brand" href="#">HighEdu.uz</a>
+    </div>
+
+
+    <div>
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+
+         
+
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#psycology">Psycology</a></li>
+          
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="education.html">Education</a></li>
+              <li><a href="#section42">Medicine</a></li>
+               <li><a href="#section41">Programing</a></li>
+              <li><a href="#section42">Engineering</a></li>
+            </ul>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Place<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Tashkent</a></li>
+              <li><a href="#section42">Andijan</a></li>
+              <li><a href="#section41">Namangan</a></li>
+              <li><a href="#section42">Fergana</a></li>
+              <li><a href="#section41">Samarkand</a></li>
+              <li><a href="#section42">Bukhara</a></li>
+              <li><a href="#section41">Kharezm</a></li>
+              <li><a href="#section42">Surkandarya</a></li>
+            </ul>
+            <li><a href="#contact">Contact</a></li>
+          </li>
+        
+
+        <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg navbar-right" data-toggle="modal" data-target="#signin">
+sign in
+</button>
+<button type="button" class="btn btn-primary btn-lg navbar-right" data-toggle="modal" data-target="#sighup">
+sign up
+</button>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<!-- Modal -->
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign in</h4>
+      </div>
+      <div class="modal-body">
+    <form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="sighup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign up</h4>
+      </div>
+      <div class="modal-body">
+    <form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+       
+         <!-- MAP -->
+         <div id="map-block">     
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193357.0253178328!2d72.1795596101455!3d40.77953964410545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bc901d6b13d4ef%3A0xfc45bcaa7973dfac!2z0JDQvdC00LjQttCw0L0sINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1493189113023" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>
+</div>
+
+
+
+<div id="foot" class="container-fluid">
+  <h1>footer</h1>
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+<div class="container text-left">
+            <small style="color:grey" class="copyright">Copyright &copy 2015 SVAPP Private Limited.All Rights Reserved.</small>
+            <a href="#"><small  class="fa fa-lg fa-skype pull-right">  </small></a>
+            <a href="#"><small  class="fa fa-lg fa-google-plus pull-right"> </small></a>
+            <a href="#"><small  class="fa fa-lg fa-linkedin pull-right">  </small></a>
+            <a href="#"><small  class="fa fa-lg fa-twitter pull-right">  </small></a>
+            <a href="#"><small  class="fa fa-lg fa-facebook-official pull-right">  </small></a>
+            <a href="#"><small  class="fa fa-lg fa-telegram pull-right">  </small></a>
+            <a href="#"><small  class="fa fa-lg fa-instagram pull-right">  </small></a>
+           
+        </div><!--End container-->
+
+
+</html>
+</body>
+
+
