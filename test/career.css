@@ -1,0 +1,116 @@
+body{
+background-image: url("./images/categoryPhotos/karusel.jpg")
+
+
+  }
+
+  .radio {
+  	text-align: center;
+    /*padding-top: 70px;*/
+  }
+
+.animated fadeInDown go{
+  padding-top: 70px;
+}
+
+
+
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+
+   }
+   @-webkit-keyframes fadeInLeft {
+    from {
+     left:-100px;
+    }
+    to {
+
+     left: 0;
+         }
+   }
+    @keyframes fadeInLeft {
+    from {
+     left:-100px;
+    }
+    to {
+
+     left: 0;
+         }
+   }
+
+
+   .fadeInTop {
+    -webkit-animation-name: fadeInTop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: fadeInTop;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+
+   }
+   @-webkit-keyframes fadeInTop {
+    from {
+     top:-100px;
+    }
+    to {
+
+     top: 0;
+         }
+   }
+    @keyframes fadeInTop {
+    from {
+     top:-100px;
+    }
+    to {
+
+     top: 0;
+         }
+   }
+
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+
+   }
+   @-webkit-keyframes fadeInRight {
+    from {
+     left:-100px;
+    }
+    to {
+
+     left: 0;
+         }
+   }
+    @keyframes fadeInRight {
+    from {
+     right:-100px;
+    }
+    to {
+
+     right: 0;
+         }
+   }
+
+h1, b{
+	color: lightblue;
+}
+

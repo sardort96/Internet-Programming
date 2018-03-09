@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <link rel="stylesheet" type="text/css" href="career.css">
+    <link rel="stylesheet" type="text/css" href="animation.css">
+    <link rel="stylesheet" type="text/css" href="b.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../b.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../animations.css">
+    <script src="../intern.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid text-" style="background-color:rgba(3, 10, 43, .50);">
+      
+        <div class="container-fluid text-right fadeInRight">
+          <a href="#"><i class="fa fa-lg fa-skype pull-center fanav">  </i></a>
+          <a href="#foot"><i class="fa fa-lg fa-google-plus fanav ">  </i></a>
+          <a href="#"><i class="fa fa-lg fa-linkedi fanav">  </i></a>
+          <a href="#"><i class="fa fa-lg fa-twitter fanav">  </i></a>
+          <a href="#"><i class="fa fa-lg fa-facebook fanav">  </i></a>
+          <a href="#"><i class="fa fa-lg fa-telegram fanav">  </i></a>
+          <a href="#"><i class="fa fa-lg fa-instagram fanav">  </i></a>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand blink" href="#">HighEdu.uz</a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            
+            <ul class="nav navbar-nav">
+                  <li><a href="../b.html#myCarousel">Home</a></li>
+              <li><a href="#psycology">Psycology</a></li>
+              
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li><a href="category/education.html">Education</a></li>
+                <li class="dropdown-menu"></li>
+                <ul class="dropdown-menu"> <a href="#" class="dropdown-toggle" role="button" aria-expendet="false"></a></ul>
+                <li><a href="category/medicine.html">Medicine</a></li>
+                <li><a href="category/art.html">Art</a></li>
+                <li><a href="category/sport.html">Sport</a></li>
+                <li><a href="category/economica.html">Economy</a></li>
+                <li><a href="category/transportation.html">Transportation</a></li>
+                <li><a href="category/technology.html">Technology</a></li>
+                <li><a href="category/law.html">Law</a></li>
+                <li><a href="category/agrar.html">Agreculture</a></li>
+                 <li><a href="architecture.html">Architecture</a></li>
+                
+
+              </ul>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Place<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="tashkent.html">Toshkent</a></li>
+                <li><a href="andijan.html">Andijon</a></li>
+                <li><a href="bukhara.html">Buxoro</a></li>
+                <li><a href="fergana.html">Farg'ona</a></li>
+                <li><a href="djizzak.html">Jizzax</a></li>
+                <li><a href="namangan.html">Namangan</a></li>
+                <li><a href="navoiy.html">Navoiy</a></li>
+                <li><a href="kashkadarya.html">Qashqadaryo</a></li>
+                <li><a href="karakalpakistan.html">Qoraqalpog'iston</a></li>
+                <li><a href="samarqand.html">Samarqand</a></li>
+                <li><a href="syrdarya.html">Sirdaryo</a></li>
+                <li><a href="surkhandarya.html">Surxondaryo</a></li>
+                <li><a href="tashkentreg.html">Toshkent viloyati</a></li>
+                <li><a href="kharezm.html">Xorazm</a></li>
+              </ul>
+              <li><a href="#contact">Contact</a></li>
+            </li>
+            
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+              
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary btn-defalt navbar-right" data-toggle="modal" data-target="#signin">
+              sign in
+              </button>
+              <button type="button" class="btn btn-primary btn-defalt " data-toggle="modal" data-target="#sighup">
+              sign up
+              </button>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Sign in</h4>
+        </div>
+        <div class="modal-body">
+          <form action="signin.php" method="GET">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" name="pwd">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          
+        </div>
+        <?php
+          <!-- if(strcmp($_SESSION['id'], )) -->
+          if(isset($_SESSION['id'])){
+          <!-- echo $_SESSION['id']; -->
+          <div class="alert alert-success" role="alert">You are successfully signed in!</div>
+          }else {
+          <!--echo "Your are not signed in!";-->
+          <div class="alert alert-danger" role="alert">Could not signed in!</div>
+          }
+        ?>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="sighup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Sign up</h4>
+        </div>
+        <div class="modal-body">
+          <form action="signup.php" method="POST">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" name="pwd">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="test">
+    
+<div class="radio">
+
+
+<h1 class=" animated fadeInDown go">Test for future career!</h1><br><br>
+
+<b> 1.Choose your option</b> <br>
+<blockquote class="fadeInLeft"><em>
+<input type="radio" id="q11"  value="Scheduled "> Do professional lifesaving at a beach <br>
+<input type="radio" id="q12" value="Spontaneous "> Work on genetic research in a laboratory <br>
+<input type="radio" id="q13" value="Spontaneous ">Edit articles written for a popular magazine<br></em>
+</blockquote>
+
+<b >2.Choose your option</b> <br>
+<blockquote class=" fadeInRight"><em>
+<input type="radio" id="q21"  value="Scheduled "> Handle enquiries at an information desk in a busy shopping mall  <br>
+<input type="radio" id="q22" value="Spontaneous ">Look after children in an after school care centre   <br>
+<input type="radio" id="q23" value="Spontaneous ">Work in vineyards, checking grape yields and quality<br></em>
+</blockquote>
+
+
+<b >3.Choose your option</b> <br>
+<blockquote class="fadeInLeft"><em>
+<input type="radio" id="q31"  value="Scheduled "> Devise and test new synthetic materials  <br>
+<input type="radio" id="q32" value="Spontaneous ">  Act in a stage play  <br>
+<input type="radio" id="q33" value="Spontaneous ">Calculate economic values of commercial properties<br></em>
+</blockquote>
+
+
+<b >4.Choose your option</b> <br>
+<blockquote class="fadeInRight"><em>
+<input type="radio" id="q41"  value="Scheduled "> Audit company records for a legal firm  <br>
+<input type="radio" id="q42" value="Spontaneous "> Liaise with wholesale companies about new swimwear stocks <br>
+<input type="radio" id="q43" value="Spontaneous "> Help people with addictions stop using drugs<br></em>
+</blockquote>
+
+
+<b >5.Choose your option </b><br>
+<blockquote class="fadeInLeft"><em>
+<input type="radio" id="q51"  value="Scheduled "> Examine people's eyes to see if they need glasses <br>
+<input type="radio" id="q52" value="Spontaneous "> Supervise keeping a cricket pitch in top condition  <br>
+<input type="radio" id="q53" value="Spontaneous ">Control the movements of airplanes in and around airports <br></em>
+</blockquote>
+
+
+<b >6.Choose your option</b> <br>
+<blockquote class="fadeInRight"><em>
+<input type="radio" id="q61"  value="Scheduled ">Work on graphic art designs for advertising companies<br>
+<input type="radio" id="q62" value="Spontaneous "> Assess correctness of business tax returns <br>
+<input type="radio" id="q63" value="Spontaneous ">Ask people in the street to complete surveys<br></em>
+</blockquote>
+
+
+<b>7.Choose your option</b> <br>
+<blockquote class="fadeInLeft"><em>
+<input type="radio" id="q71"  value="Scheduled "> Monitor absenteeism and work output for factory managers<br>
+<input type="radio" id="q72" value="Spontaneous "> Teach small community groups about preventing accidents <br>
+<input type="radio" id="q73" value="Spontaneous ">Supervise a group of adults with intellectual disabilities<br></em>
+</blockquote>
+
+<b >8.Choose your option</b> <br>
+<blockquote class="fadeInRight"><em>
+<input type="radio" id="q81"  value="Scheduled ">Maintain and review complex radio signalling equipment <br>
+<input type="radio" id="q82" value="Spontaneous ">Make and sell your own pottery<br>
+<input type="radio" id="q83" value="Spontaneous ">Review insurance claim forms and report on findings<br></em>
+</blockquote>
+
+
+<b>9.Choose your option</b> <br>
+<blockquote class="fadeInLeft"><em>
+<input type="radio" id="q91"  value="Scheduled "> Interview applicants for a retail position <br>
+<input type="radio" id="q92" value="Spontaneous ">Work with domestic violence-affected people<br>
+<input type="radio" id="q93" value="Spontaneous ">Iron and quality check garments for a fashion designer<br></em>
+</blockquote>
+
+<b>10.Choose your option</b> <br>
+<blockquote  class=" fadeInRight"><em>
+<input type="radio" id="q101"  value="Scheduled "> Direct a movie or theatre production <br>
+<input type="radio" id="q102" value="Spontaneous ">Manage housing loan funds for a bank<br>
+<input type="radio" id="q103" value="Spontaneous ">Sell hardware materials to customers in a shop <br></em>
+</blockquote>
+
+<b >11.Choose your option</b> <br>
+<blockquote class="fadeInLeft"><em>
+<input type="radio" id="q111"  value="Scheduled "> Monitor power generation in an electrical plant <br>
+<input type="radio" id="q112" value="Spontaneous "> Chart and analyse deep space signals <br>
+<input type="radio" id="q113" value="Spontaneous ">Write a TV script<br></em>
+</blockquote>
+
+
+<b>12.Choose your option</b> <br>
+<blockquote  class=" fadeInRight"><em>
+<input type="radio" id="q121"  value="Scheduled "> Write poetry for greeting cards <br>
+<input type="radio" id="q122" value="Spontaneous "> Review and document new government policy<br>
+<input type="radio" id="q123" value="Spontaneous "> Bargain with manufacturers to obtain good retail resale prices<br></em>
+</blockquote>
+
+
+
+<b>13.Choose your option</b> <br>
+<blockquote class="fadeInLeft"><em>
+<input type="radio" id="q131"  value="Scheduled "> Assist university students to understand lecture materials <br>
+<input type="radio" id="q132" value="Spontaneous "> Round up and shear sheep<br>
+<input type="radio" id="q133" value="Spontaneous ">Take measurements of light and temperature, conducting research <br></em>
+</blockquote>
+
+<b>14.Choose your option</b> <br>
+<blockquote  class=" fadeInRight"><em>
+<input type="radio" id="q141"  value="Scheduled ">  Measure a paddock before building a shed <br>
+<input type="radio" id="q142" value="Spontaneous "> Work in an aeronautical team re-designing an aviation engine <br>
+<input type="radio" id="q143" value="Spontaneous "> Compose music for movie soundtracks<br></em>
+</blockquote>
+
+<b>15.Choose your option</b> <br>
+<blockquote class="fadeInLeft"><em>
+<input type="radio" id="q151"  value="Scheduled ">Analyse chemical balance and acidity levels of wine   <br>
+<input type="radio" id="q152" value="Spontaneous ">Regularly host a radio segment, giving your views <br>
+<input type="radio" id="q153" value="Spontaneous ">Manage a busy office<br></em>
+</blockquote>
+
+
+<button onClick="get()"> Submit </button>
+<p id="demo">
+<!-- <input type="button" onclick="myFunction()" value="Reset form"> -->
+</p>
+</div>
+</div>
+<!-- Score = <input type=text size=15 name="percentage"><br>
+Correct answers:<br></font>
+<textarea name="solutions" wrap="virtual" rows="4" cols="25"></textarea>
+</form> -->
+<!-- <p> -->
+
+<p id="demo"></p>
+
+<style>
+/*body{
+background-image: url("karusel.jpg");
+  }
+ */
+</style>
+
+
+
+<script>
+
+function myFunction() {
+    document.getElementById("demo").reset();
+}
+
+function get(){
+
+
+if( document.getElementById("q11").checked && document.getElementById("q21").checked && document.getElementById("q31").checked && document.getElementById("q41").checked && document.getElementById("q51").checked  && document.getElementById("q61").checked && document.getElementById("q71").checked && document.getElementById("q81").checked && document.getElementById("q91").checked && document.getElementById("q101").checked && document.getElementById("q111").checked && document.getElementById("q121").checked && document.getElementById("q131").checked && document.getElementById("q141").checked && document.getElementById("q151").checked)
+{
+ // document.getElementById("demo").innerHTML = "Hello Dolly.";
+            var str = " Get your result ";
+            var result = str.link("test.html");
+            document.getElementById("demo").innerHTML = result;
+}
+else if
+  ( document.getElementById("q21").checked && document.getElementById("q22").checked && document.getElementById("q32").checked && document.getElementById("q42").checked && document.getElementById("q52").checked  && document.getElementById("q62").checked && document.getElementById("q72").checked && document.getElementById("q82").checked && document.getElementById("q92").checked && document.getElementById("q102").checked && document.getElementById("q112").checked && document.getElementById("q122").checked && document.getElementById("q132").checked && document.getElementById("q142").checked && document.getElementById("q152").checked)
+{
+  var str = " Get your result ";
+            var result = str.link("test1.html");
+            document.getElementById("demo").innerHTML = result;
+}
+else if
+  ( document.getElementById("q23").checked && document.getElementById("q23").checked && document.getElementById("q33").checked && document.getElementById("q43").checked && document.getElementById("q53").checked  && document.getElementById("q63").checked && document.getElementById("q73").checked && document.getElementById("q83").checked && document.getElementById("q93").checked && document.getElementById("q103").checked && document.getElementById("q113").checked && document.getElementById("q123").checked && document.getElementById("q133").checked && document.getElementById("q143").checked && document.getElementById("q153").checked)
+{
+  var str = "Get your result ";
+            var result = str.link("test2.html");
+            document.getElementById("demo").innerHTML = result;
+}
+else{
+
+   var str = "Get your result ";
+            var result = str.link("test3.html");
+            document.getElementById("demo").innerHTML = result;
+}
+
+}
+
+</script>
+
+  
+
+<style>
+.footul{
+color: white;
+font-size: 1em;
+}
+</style>
+<div id="foot" class="container-fluid">
+   <ul class="col-xs-4 fadeInLeft">
+  
+  
+    <li><a class="footul" href="http://www.4icu.org/uz/">Best Universities in Uzbekistan</a></li>
+    <li><a class="footul" href="http://www.webometrics.info/en/Asia/Uzbekistan">Renking Web of Universities in Uzbekistan</a></li>
+    <li><a class="footul" href="http://www.studyjapan.go.jp/en/">Study in Japan</a></li>
+    <li><a class="footul" href="https://nyintl.net/2013/01/the-american-university-system-explained/">American University system</a></li>
+   <li><a class="footul" href="https://www.studyusa.com/en/a/58/understanding-the-american-education-system">Understanding American Education System</a></li>
+    <li><a class="footul" href="http://www.internationalstudentguidetotheusa.com/articles/american_education_system.htm">International Study Guide</a></li>
+    
+    <li><a class="footul" href="http://work.chron.com/things-consider-choosing-career-5175.html">Things to Consider When Choosing a Career</a></li>
+    <li><a class="footul" href="http://www.kiplinger.com/article/business/T012-C006-S001-how-to-choose-the-right-job.html">How to Choose the Right Job - Kiplinger</a></li>
+    
+  
+  </ul>
+  <ul class="col-xs-4 fadeInTop">
+    
+    <li><a class="footul" href="http://en.nstu.ru/admissions/russian_system_of_higher_education/">Russian System of Higher Education</a></li>
+    <li><a class="footul" href="https://www.justlanded.com/english/Russia/Russia-Guide/Education/Russian-Schools">Russia-Study Guide</a></li>
+    <li><a class="footul" href="http://www.scholars4dev.com/category/level-of-study/masters-scholarships/">Masters Scholarships | 2017-2018 Scholarships in for Masters</a></li>
+    <li><a class="footul" href="http://www.scholars4dev.com/category/country/usa-scholarships/">Usa Scholarships | 2017-2018 Scholarships in for Usa</a></li>
+    <li><a class="footul" href="https://prodigyfinance.com/community/scholarship">Scholarships</a></li>
+    <li><a class="footul" href="https://www.timeshighereducation.com/">Academic and Universities News</a></li>
+    <li><a class="footul" href="https://www.heacademy.ac.uk/">Higher Education Academy</a></li>
+    <li><a class="footul" href="http://www.dhet.gov.za/">Higher Education and Training</a></li>
+  </ul>
+  <ul class="col-xs-4 fadeInRight">
+      <li><a class="footul" href="http://www.therichest.com/luxury/most-expensive/the-top-10-most-expensive-universities-in-the-world/">Top 10 Most Exepensive Universities in the world</a></li>
+    <li><a class="footul" href="https://www.topuniversities.com/subject-rankings/2017">Top 100 in the world</a></li>
+    <li><a class="footul" href="http://www.sais-jhu.edu/">Advance your Study</a></li>
+    <li><a class="footul" href="https://www.findamasters.com/masters-degrees/usa/?400l20">Master degree in USA</a></li>
+    <li><a class="footul" href="https://www.findamasters.com/study-abroad/europe/">Master degree in Europe</a></li>
+    <li><a class="footul" href="https://www.masterstudies.com/Masters-Degree/Asia/">Master degree in Asia</a></li>
+    <li><a class="footul" href="https://www.masterstudies.com/Australia/">Master degree in Australia</a></li>
+    <li><a class="footul" href="https://www.usnews.com/best-colleges/rankings/national-universities">National Universities in USA</a></li>
+  </ul>
+  <div class="container text-center ">
+    
+    <a href="#"><i class="fa fa-lg fa-skype pull-center">  </i></a>
+    <a href="#"><i class="fa fa-lg fa-google-plus ">  </i></a>
+    <a href="#"><i class="fa fa-lg fa-linkedi">  </i></a>
+    <a href="#"><i class="fa fa-lg fa-twitter ">  </i></a>
+    <a href="#"><i class="fa fa-lg fa-facebook ">  </i></a>
+    <a href="#"><i class="fa fa-lg fa-telegram ">  </i></a>
+    <a href="#"><i class="fa fa-lg fa-instagram">  </i></a>
+    
+    </div><!--End container-->
+  </html>
+</body>
+
+
+</div><!--End container-->
+</footer><!--End footer 2-->
