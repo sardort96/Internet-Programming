@@ -1,0 +1,257 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>architecture</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../b.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="sport.css">
+    <script src="../intern.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid text-" style="background-color:rgba(3, 10, 43, .50);">
+        <strong class="col-xs-6 text-left fanav" >99899 999 99 99 I mailaddress@gmail.com</strong>
+        <div class="container-fluid text-right">
+          <a href="#"><i class="fa fa-lg fa-skype pull-center fanav">  </i></a>
+          <a href="#foot"><i class="fa fa-lg fa-google-plus fanav ">  </i></a>
+          <a href="#"><i class="fa fa-lg fa-linkedi fanav">  </i></a>
+          <a href="#"><i class="fa fa-lg fa-twitter fanav">  </i></a>
+          <a href="#"><i class="fa fa-lg fa-facebook fanav">  </i></a>
+          <a href="#"><i class="fa fa-lg fa-telegram fanav">  </i></a>
+          <a href="#"><i class="fa fa-lg fa-instagram fanav">  </i></a>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HighEdu.uz</a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            
+            <ul class="nav navbar-nav">
+              <li><a href="../index.php#myCarousel">Home</a></li>
+              <li><a href="../index.php#psycology">Psycology</a></li>
+              
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="education.html">Education</a></li>
+                <li class="dropdown-menu"></li>
+                <ul class="dropdown-menu"> <a href="#" class="dropdown-toggle" role="button" aria-expendet="false"></a></ul>
+                
+                <li><a href="medicine.html">Medicine</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="sport.html">Sport</a></li>
+                <li><a href="economica.html">Economy</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="law.html">Law</a></li>
+                <li><a href="agrar.html">Agreculture</a></li>
+                 <li><a href="architecture.html">Architecture</a></li>
+                
+              </ul>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Place<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                
+               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Regions<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <?php while ($row1 = $regions->fetch_array()) : ?>
+                <li><a href="regions.php?id=<?php echo $row1['id']; ?>"><?php echo $row1['name']; ?></a></li>
+                <?php endwhile; ?>
+              </ul>
+              <li><a href="#contact">Contact</a></li>
+            </li>
+              </ul>
+              <li><a href="#contact">Contact</a></li>
+            </li>
+            
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+              
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary btn-defalt navbar-right" data-toggle="modal" data-target="#signin">
+              sign in
+              </button>
+              <button type="button" class="btn btn-primary btn-defalt " data-toggle="modal" data-target="#sighup">
+              sign up
+              </button>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Sign in</h4>
+        </div>
+        <div class="modal-body">
+          <form action="signin.php" method="GET">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" name="pwd">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          
+        </div>
+        <?php
+          <!-- if(strcmp($_SESSION['id'], )) -->
+          if(isset($_SESSION['id'])){
+          <!-- echo $_SESSION['id']; -->
+          <div class="alert alert-success" role="alert">You are successfully signed in!</div>
+          }else {
+          <!--echo "Your are not signed in!";-->
+          <div class="alert alert-danger" role="alert">Could not signed in!</div>
+          }
+        ?>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="sighup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Sign up</h4>
+        </div>
+        <div class="modal-body">
+          <form action="signup.php" method="POST">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" name="pwd">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- MAP -->
+         <!-- <div id="map-block">     
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191884.74398372095!2d69.13928098131092!3d41.28277055668046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1493188925279" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>
+</div> -->
+
+
+
+<div class="container">
+  <h2>Connecting to the architecture...</h2><br><br>
+  
+  <div class="row"><!-- 1 row -->
+   <!-- 1univer -->
+    <div class="col-md-4">
+      <div class="thumbnail">
+        
+          <img class="imgsize" src="../images/categoryPhotos/arch.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p><h4>Tashkent Architectural Building Institute</h4>
+            <button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-target="#myModal1">
+view more
+</button></p>
+            
+          </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Tashkent Architectural Building Institute</h4>
+      </div>
+      <div class="modal-body">
+   <form>Adress: Str. Navoi, house 13. , Tashkent, Uzbekistan</form><br>
+  <a href="http://taqi.uz/en/" target="_blank"><em>read more...</em></a>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 1univer end -->
+
+
+<div class="trans">
+  <h4> <strong>About institute...</strong></h4><br><br>
+  <p>
+    Tashkent Architecture and Construction Institute was organized by the Decree of the President of Republic of Uzbekistan dated on the 6th of May, 1991.
+
+The Institute is the basic higher educational institution in the Republic in the field of architecture and construction responsible for implementation of certain tasks under the National program of professional training.
+
+There are 4 faculties in the institute: “Architecture”, “Buildings and Structures Construction”, “Engineering and Construction” and “Management of Construction “, there is also Lyceum, Retraining and Professional Skill Improvement Centre of Managers in the field of construction, the Spirituality and Enlightenment Centre, the Information Resourses Centre and the Department of International Relations.
+
+Regular staff of the Tashkent Architecture and Construction Institute includes 299 teachers: 23 of them are doctors of sciences and professors, 93 candidates of sciences and senior lecturers. Thus, 47,3 % of teachers have scientific degrees and scientific ranks.
+
+More than two thousand students study at the internal and correspondence branches.
+
+
+  </p>
+
+
+</div>
+
+
+ 
+
+
+
+  </div><!-- 1row end -->
+ </div>
+ 
+
+
+
+
+
+
+
+
