@@ -27,16 +27,25 @@ Programming used:
 * HTML5 for its canvas to display the result of the test   
 
 ![](screenshots/5.png)
+
 The footer of the website offers the location of the company and some useful links for students.
 
 Programming used:
 * Bootstrap for footer
 * SOAP and REST services for getting links from the database and displaying them in the footer
+
 ![](screenshots/6.png)
+
 Whenever users click on the category tab, they receive a list of universities with the desired major chosen in the category drop down link.
+
 ![](screenshots/8.png)
+
 If users want to choose a university according to the region, they can get a list of universities that exist in a particular region. They also get the location of those regions.
+
 ![](screenshots/9.png)
+
 The administrator can manage and modify content of the website through the admin panel. 
+
 ![](screenshots/10.png)
+
 ![](screenshots/11.png)
