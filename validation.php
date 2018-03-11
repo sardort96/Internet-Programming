@@ -22,7 +22,7 @@ $result = mysqli_query($con, $query1);
 if($result){
 	header("Location: http://localhost/first#contact");
 }else{
-	echo "NOT SEND";
+	echo "NOT SENT";
 }
 
 
